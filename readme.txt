@@ -5,4 +5,4 @@ csv/problem.csvの構成
 
 
 csv/ranking.csvの構成
-名前,得点
+得点,名前
