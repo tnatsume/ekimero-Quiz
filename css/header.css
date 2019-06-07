@@ -1,0 +1,11 @@
+header{
+    background:lightgreen;
+    height:65px;
+}
+
+.header-logo{
+    line-height:65px;
+    float:left;
+    padding-left:30px;
+    font-size:40px;
+}

@@ -1,0 +1,71 @@
+.main{
+    background:#eee;
+    height:700px;
+}
+.main .container{
+    width:80%;
+    margin:0 auto;
+    background-image: url("../img/yamanote.jpg");
+    background-size: cover;
+    height:100%;
+    opacity:0.6;
+}
+
+
+.main .btn{
+    display: inline-block;
+    background:lightblue;
+    color:#333;
+    width:30%;
+    height:20px;
+    padding:20px 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+    line-height:20px;
+    text-align: center;
+    left: 15%;
+    /* margin-right:10px; */
+}
+
+.main .btn1{
+    display: inline-block;
+    background:lightblue;
+    color:#333;
+    width:30%;
+    height:20px;
+    padding:20px 0;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+    line-height:20px;
+    text-align: center;
+    right: 15%;
+}
+
+.main input{
+    height:20px;
+    width:40%;
+    font-size:20px;
+    border-radius:10px;
+}
+
+.main .name{
+    position:relative;
+    top:60px;
+    width: 60%;
+    left: 20%;
+}
+
+.main .top{
+    text-align:center;
+    font-size:80px;
+    padding-top:160px;
+    position:relative;
+    z-index:-10;
+    transition: 1s;
+}
+
+.main .top:hover{
+    transform: rotate(360deg);
+}

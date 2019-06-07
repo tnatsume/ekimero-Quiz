@@ -1,0 +1,17 @@
+/* 共通 */
+footer{
+    background:#333;
+    height:70px;
+}
+.footer-logo{
+    float:left;
+    width:30%;
+}
+
+footer p{
+    color:#eee;
+    line-height:70px;
+}
+.footer-menu{
+    
+}

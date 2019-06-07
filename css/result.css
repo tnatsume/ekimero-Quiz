@@ -1,0 +1,27 @@
+.result .top{
+    padding-top:60px;
+
+}
+.result{
+    background:#eee;
+    height:700px;
+}
+.result .container{
+    width:80%;
+    margin:0 auto;
+    background-image: url("../img/yamanote.jpg");
+    background-size: cover;
+    height:100%;
+    opacity:0.6;
+}
+.result .btn{
+    margin-top:40px;
+    width:100%;
+    text-align:center;
+    background-color:green;
+    border:1px solid tomato;
+    border-radius:30px;
+    font-size:20px;
+}.hidden{
+    color:none;
+}
