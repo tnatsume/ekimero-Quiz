@@ -1,16 +1,5 @@
 <!-- ページ共通ヘッダー -->
 <header>
-    <div class="header-logo">
-        <a href="/">TOP</a>
-    </div>
-
-
-
-    <div class="header-menu">
-        <ul>
-        <li></li>
-        <li></li>
-        </ul>
-    </div>
-
+  <p class="band red"><a href="/">TOP</a>
+  <p class="band blue"><a href="ranking.php">ランキング</a>
 </header>

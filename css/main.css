@@ -9,15 +9,14 @@
     background-size: cover;
     height:100%;
     opacity:0.6;
+    z-index: -1;
 }
-
-
 .main .btn{
     display: inline-block;
     background:lightblue;
     color:#333;
     width:30%;
-    height:20px;
+    height: 5.6%;
     padding:20px 0;
     border-radius: 10px;
     position: absolute;
@@ -27,13 +26,12 @@
     left: 15%;
     /* margin-right:10px; */
 }
-
 .main .btn1{
     display: inline-block;
     background:lightblue;
     color:#333;
     width:30%;
-    height:20px;
+    height: 1.8%;
     padding:20px 0;
     border-radius: 10px;
     position: absolute;
@@ -42,30 +40,23 @@
     text-align: center;
     right: 15%;
 }
-
 .main input{
     height:20px;
     width:40%;
     font-size:20px;
     border-radius:10px;
 }
-
 .main .name{
     position:relative;
     top:60px;
     width: 60%;
     left: 20%;
 }
-
 .main .top{
     text-align:center;
     font-size:80px;
-    padding-top:160px;
+    padding-top: 10%;
     position:relative;
     z-index:-10;
     transition: 1s;
-}
-
-.main .top:hover{
-    transform: rotate(360deg);
 }
