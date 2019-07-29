@@ -49,14 +49,15 @@
     <link rel="stylesheet" href="css/problem.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="img/yamanote.jpg" type="image/x-icon">
 </head>
 <body>
     <?php @include('header.php') ?>
     <div class="problem">
     
         <div class="container">
-            <!-- <a href="javascript:void(0);"class="repeat btn"id="stop" onclick="StopSound();">一時停止</a><br/>
-            <a href="javascript:void(0);"class="repeat btn"id="repeat" onclick="PlaySound();">🔁もう一度聞く</a><br/> -->
+            <!-- <a href="javascript:void(0);"class="repeat btn"id="stop" onclick="StopSound();">一時停止</a><br/> -->
+            <!-- <a href="javascript:void(0);"class="repeat btn"id="repeat" onclick="PlaySound();">🔁もう一度聞く</a><br/> -->
             <form action="result.php"method="POST">
                 <input class="count"name="count"value="<?php echo $count?>">
                 <input type="text"class="title"value="この駅メロが流れている駅はどこ？"readonly>
@@ -77,24 +78,26 @@
     <script>
         var repeat = document.getElementById('music');
         var audioElem;
+        audioElem = new Audio();
+        audioElem.src = "music/" + repeat.value;
 
         // もう一度再生するが謳歌された時の処理
         function PlaySound() {
-            audioElem = new Audio();
-            audioElem.src = "music/" + repeat.value;
+            // audioElem = new Audio();
+            // audioElem.src = "music/" + repeat.value;
             StopSound();
             audioElem.play();
 
         }
         function StopSound(){
-            audioElem = new Audio();
-            audioElem.src = "music/" + repeat.value;
+            // audioElem = new Audio();
+            // audioElem.src = "music/" + repeat.value;
             audioElem.pause();
         }
         // ページが読み込まれた時の処理
         (window.onload = function(){
-            audioElem = new Audio();
-            audioElem.src = "music/" + repeat.value;
+            // audioElem = new Audio();
+            // audioElem.src = "music/" + repeat.value;
             StopSound();
             audioElem.play();
         })();

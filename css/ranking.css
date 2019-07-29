@@ -19,8 +19,17 @@
     font-size:20px;
     margin-bottom:20px;
 }
-.ranking p:hover{
-    position:relative;
-    top:10px;
-    right:10px;
+
+.ranking .btn{
+
+    display: inline-block;
+    background:lightblue;
+    color:#333;
+    height: 5.6%;
+    padding:20px 0;
+    border-radius: 10px;
+    width:40%;
+    line-height:5.6%;
+    text-align: center;
+
 }

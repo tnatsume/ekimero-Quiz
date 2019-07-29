@@ -1,6 +1,7 @@
 <?php
     // POSTされたデータの受け取り
     $name = $_POST['name'];
+    $flg = 0;
     if (isset($_POST['count'] )){
         $count = $_POST['count'];
         $count ++;
@@ -13,15 +14,16 @@
     // 正誤判定を行う
     if ($_POST['question'] == $_POST['answer'].'駅'){
         $result = $result + 1 ;
-        $str = "正解です。";
+        $str = "正解";
+        
     }else{
         if ( $count == 0 ){
             // $result = 0;
         }else{
             $result = $result;
         }
-        
-        $str = "不正解です。";
+        $flg =1;
+        $str = "不正解";
     }
 ?>
 
@@ -39,6 +41,7 @@
     <link rel="stylesheet" href="css/responsible.css">
     <link rel="stylesheet" href="css/ranking.css">
     <link rel="stylesheet" href="css/result.css">
+    <link rel="shortcut icon" href="img/yamanote.jpg" type="image/x-icon">
 </head>
 <body>
     <?php @include('header.php') ?>
@@ -50,11 +53,14 @@
             <form action="problem.php"method="POST">
             
         <?php endif ?>
-                <p class="hidden"></p>
                 <h3>あなたの回答は<?php echo $_POST['question']?></h3>
                 <h3>正解は<?php echo $_POST['answer']?>駅</h3>
                 <h3></h3>
-                <h3><?php echo $str ?></h3>
+                <?php if($flg==0):?>
+                    <h3><span  class="corrent"><?php echo $str ?></span>です。</h3>
+                <?php else:?>
+                    <h3><span  class="noncorrent"><?php echo $str ?></span>です。</h3>
+                <?php endif ?>
                 <p></p>
                 <p></p>
                 <p></p>
@@ -64,6 +70,7 @@
                 <input type="hidden"name="result"value="<?php echo $result ?>">
                 <input type="hidden"name="name"value="<?php echo $name ?>">
 
+                <!-- 問題数によって条件分岐でページ遷移を行う -->
                 <?php if ($count > 8 ): ?>
                     <input type="submit"class="btn"value="結果を見る">
                 <?php else: ?>

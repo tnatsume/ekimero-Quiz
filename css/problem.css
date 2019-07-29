@@ -57,12 +57,10 @@
     border: 1px solid tomato;
     border-radius: 10px;
 }
-
-
 .problem .count{
     width: 10%;
     position:relative;
-    left:90%;
+    left: 88%;
     top:10px;
     font-size:20px;
     color:white;

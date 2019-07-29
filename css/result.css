@@ -25,3 +25,18 @@
 }.hidden{
     color:none;
 }
+.result h3{
+    background-color: white;
+    color:#333;
+    font-size:20px;
+    letter-spacing:10px;
+    margin: 0;
+}
+
+.result .corrent{
+    color:red;
+}
+
+.result .noncorrent{
+    color:blue;
+}

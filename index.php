@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsible.css">
+    <link rel="stylesheet" href="css/ranking.css">
+    <link rel="shortcut icon" href="img/yamanote.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+
 </head>
 <body>
     <?php @include('header.php') ?>
