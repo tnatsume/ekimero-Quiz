@@ -29,7 +29,7 @@
     <?php @include('header.php') ?>
     <div class="finish">
         <div class="container">
-            <h2>お疲れ様でした</h2>
+            <h2 class="top">お疲れ様でした</h2>
             <p>あなたの結果は9問中<?php echo $result?>問正解でした。</p>
             <a class="btn"href="/"><span >TOPに戻る</span></a>
             <a class="btn1"href="ranking.php"><span >ランキング</span></a>

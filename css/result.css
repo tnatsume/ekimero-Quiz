@@ -13,6 +13,7 @@
     background-size: cover;
     height:100%;
     opacity:0.6;
+    text-align:center;
 }
 .result .btn{
     margin-top:40px;
