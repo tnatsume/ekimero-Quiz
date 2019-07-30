@@ -9,6 +9,7 @@
     background-size: cover;
     height:100%;
     opacity:0.6;
+    text-align:center;
 }
 .finish .btn{
     display: inline-block;
@@ -57,4 +58,16 @@
     position:relative;
     z-index:-10;
     transition: 1s;
+}
+
+.finish .top{
+    font-size:30px;
+    font-weight:bold;
+
+}
+
+.finish p{
+    font-size:20px;
+    font-weight:bold;
+    /* color:lightgreen; */
 }
