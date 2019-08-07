@@ -17,12 +17,14 @@
 }
 .result .btn{
     margin-top:40px;
+    height: 4.8em;
     width:100%;
     text-align:center;
     background-color:green;
     border:1px solid tomato;
     border-radius:30px;
     font-size:20px;
+    color: #fff;
 }.hidden{
     color:none;
 }

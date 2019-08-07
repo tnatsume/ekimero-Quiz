@@ -14,18 +14,16 @@
     width:40%;
     display:inline-block;
 }
-
-
 .problem .title{
     width:100%;
     color:#eee;
+    height: 2.8em;
     margin:0 auto;
     font-size:32px;
     margin-top: 20px;
     margin-bottom:100px;
     border-radius:30px;
 }
-
 .problem input{
     width:100%;
     /* margin:0 auto; */
