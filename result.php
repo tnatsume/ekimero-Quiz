@@ -4,12 +4,11 @@
     $flg = 0;
     if (isset($_POST['count'] )){
         $count = $_POST['count'];
-        $count ++;
         $result = $_POST['result'];
     } else if($count > 9){
     }else{
         // $result = 0;
-        $count = 0;
+        $count = 1;
     } 
     // 正誤判定を行う
     if ($_POST['question'] == $_POST['answer'].'駅'){

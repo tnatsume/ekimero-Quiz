@@ -59,7 +59,7 @@
             <!-- <a href="javascript:void(0);"class="repeat btn"id="stop" onclick="StopSound();">一時停止</a><br/> -->
             <!-- <a href="javascript:void(0);"class="repeat btn"id="repeat" onclick="PlaySound();">🔁もう一度聞く</a><br/> -->
             <form action="result.php"method="POST">
-                <input class="count"name="count"value="<?php echo $count?>">
+                <input class="count"name="count"value="<?php echo $count+1 ?>">
                 <input type="text"class="title"value="この駅メロが流れている駅はどこ？"readonly>
                 <input type="hidden"id="music"value="<?php echo $problem [$count][6]?>"?>
                 <input type="submit"name="question"class="select btn"value="<?php echo $problem [$count][1]?>駅">
