@@ -62,10 +62,10 @@
                 <input class="count"name="count"value="<?php echo $count?>">
                 <input type="text"class="title"value="この駅メロが流れている駅はどこ？"readonly>
                 <input type="hidden"id="music"value="<?php echo $problem [$count][6]?>"?>
-                <input type="submit"name="question"class="btn"value="<?php echo $problem [$count][1]?>駅">
-                <input type="submit"name="question"class="btn"value="<?php echo $problem [$count][2]?>駅">
-                <input type="submit"name="question"class="btn"value="<?php echo $problem [$count][3]?>駅">
-                <input type="submit"name="question"class="btn"value="<?php echo $problem [$count][4]?>駅">
+                <input type="submit"name="question"class="select btn"value="<?php echo $problem [$count][1]?>駅">
+                <input type="submit"name="question"class="select btn"value="<?php echo $problem [$count][2]?>駅">
+                <input type="submit"name="question"class="select btn"value="<?php echo $problem [$count][3]?>駅">
+                <input type="submit"name="question"class="select btn"value="<?php echo $problem [$count][4]?>駅">
                 <input type="hidden"name="answer"value="<?php echo $problem[$count][5]?>">
                 <input type="hidden"name="result"value="<?php echo $result ?>">
                 <input type="hidden"name="name"value="<?php echo $name ?>">

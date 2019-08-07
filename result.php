@@ -56,10 +56,11 @@
                 <h3>あなたの回答は<?php echo $_POST['question']?></h3>
                 <h3>正解は<?php echo $_POST['answer']?>駅</h3>
                 <h3></h3>
+                <h3><span  class="corrent"><?php echo $str ?></span>です。</h3>
                 <?php if($flg==0):?>
-                    <h3><span  class="corrent"><?php echo $str ?></span>です。</h3>
+                    <img src="img/current.png" width="20%"alt="">
                 <?php else:?>
-                    <h3><span  class="noncorrent"><?php echo $str ?></span>です。</h3>
+                    <img src="img/incurrent.png" width="20%"alt="">
                 <?php endif ?>
                 <p></p>
                 <p></p>
@@ -83,6 +84,42 @@
             </form>
         </div>
     <?php @include('footer.php') ?>
-    
+    <script>
+        var audioElem;
+        audioElem = new Audio();
+        var flg = <?php echo $flg ?>
+        // 正解の時の音を出す
+        function currentSound(){
+            audioElem.src = "music/current.mp3" ;
+            StopSound();
+            audioElem.play();
+        }
+        // 不正解の時の音を出す
+        function incurrentSound(){
+            audioElem.src = "music/incurrent.mp3" ;
+            StopSound();
+            audioElem.play();
+        }
+        // もう一度再生するが押下された時の処理
+        function PlaySound() {
+            StopSound();
+            audioElem.play();
+
+        }
+        // 音楽を止める処理
+        function StopSound(){
+            audioElem.pause();
+        }
+        // ページが読み込まれた時の処理
+        (window.onload = function(){
+            if(flg==0){
+                audioElem.src = "music/current.mp3" ;
+            }else{
+                audioElem.src = "music/incurrent.mp3" ;
+            }
+            StopSound();
+            audioElem.play();
+        })();
+    </script>
 </body>
 </html>
