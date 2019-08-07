@@ -63,11 +63,12 @@
 .finish .top{
     font-size:30px;
     font-weight:bold;
-
+    background: #fff;
 }
 
 .finish p{
     font-size:20px;
     font-weight:bold;
+    background: #fff;
     /* color:lightgreen; */
 }
