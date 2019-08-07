@@ -6,11 +6,8 @@
     width:80%;
     margin:0 auto;
     background-image: url("../img/hyoushoudai1.png");
-   
     background-size: cover;
     height:100%;
-    /* opacity:0.6; */
-    background-color:rgba(0,0,0,30%)
 }
 
 .ranking p{
