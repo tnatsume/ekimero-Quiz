@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/ranking.css">
+    <link rel="shortcut icon" href="img/yamanote.jpg" type="image/x-icon">
 </head>
 <body>
     <?php @include('header.php') ?>

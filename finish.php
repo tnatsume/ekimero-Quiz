@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsible.css">
     <link rel="stylesheet" href="css/finish.css">
+    <link rel="shortcut icon" href="img/yamanote.jpg" type="image/x-icon">
 </head>
 <body>
     <?php @include('header.php') ?>
